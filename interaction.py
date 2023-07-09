@@ -1,6 +1,5 @@
 import streamlit as st
 import hydralit_components as hc
-from github import Github
 from PIL import Image
 
 def interaction_page():
