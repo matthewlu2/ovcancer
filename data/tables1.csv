@@ -1,0 +1,124 @@
+Sample ID,Dataset Identifier and Data Type,Original Patient ID,"Histology and 
+
+Tumor Stage"
+Pitt_1,"Inhouse 
+
+GSE232314, scRNA-seq",TP18-M419,HGSOC IIIB
+Pitt_2,"Inhouse 
+
+GSE232314, scRNA-seq",TP18-M509,HGSOC IVB
+Regner_1,"Regner et al. (1) 
+
+GSE173682 scRNA-seq",Patient 8,HGSOC IIB
+Regner_2,"Regner et al. (1) 
+
+GSE173682 scRNA-seq",Patient 9,HGSOC IIIC
+Xu_1,"Xu et al. (2) 
+GSE184880 
+scRNA-seq",Cancer1,HGSOC IIIB
+Xu_2,Xu et al. (2) GSE184880 scRNA-seq,Cancer2,HGSOC IIB
+Xu_3,Xu et al. (2) GSE184880 scRNA-seq,Cancer3,HGSOC IC2
+Xu_4,Xu et al. (2) GSE184880 scRNA-seq,Cancer4,HGSOC IC2
+Xu_5,Xu et al. (2) GSE184880 scRNA-seq,Cancer5,HGSOC IIB
+Xu_6,Xu et al. (2) GSE184880 scRNA-seq,Cancer6,HGSOC IIIC
+Xu_7,Xu et al. (2) GSE184880 scRNA-seq,Cancer7,HGSOC IC2
+Hornburg_1,"Hornburg et al. (3) 
+
+EGAS00001004935 
+
+scRNA-seq",des3,Serous IIIB
+Hornburg_2,"Hornburg et al. (3) 
+
+EGAS00001004935 
+
+scRNA-seq",des4,HGSOC IIIC
+Hornburg_3,"Hornburg et al. (3) 
+
+EGAS00001004935 
+
+scRNA-seq",exc2,HGSOC IIIC
+Hornburg_4,"Hornburg et al. (3) 
+
+EGAS00001004935 
+
+scRNA-seq",exc3,HGSOC IVB
+Hornburg_5,"Hornburg et al. (3) 
+
+EGAS00001004935 
+
+scRNA-seq",inf1,HGSOC IC
+Hornburg_6,"Hornburg et al. (3) 
+
+EGAS00001004935 
+
+scRNA-seq",inf2,HGSOC IIIC
+Hornburg_7,"Hornburg et al. (3) 
+
+EGAS00001004935 
+
+scRNA-seq",inf3,"HGSOC, unknown"
+Hornburg_8,"Hornburg et al. (3) 
+
+EGAS00001004935 
+
+scRNA-seq",inf4,"HGSOC, unknown"
+Hornburg_9,"Hornburg et al. (3) 
+
+EGAS00001004935 
+
+scRNA-seq",inf5,HGSOC IIIA2
+Stur_01,"Stur et al. (4) 
+
+GSE189843 
+
+ST data",PR_4,"HGSOC, unknown"
+Stur_02,"Stur et al. (4) 
+
+GSE189843 
+
+ST data",ER_6,"HGSOC, unknown"
+Stur_03,"Stur et al. (4) 
+
+GSE189843 
+
+ST data",ER_3,"HGSOC, unknown"
+Stur_04,"Stur et al. (4) 
+
+GSE189843 
+
+ST data",PR_5,"HGSOC, unknown"
+Stur_05,"Stur et al. (4) 
+
+GSE189843 
+
+ST data",ER_5,"HGSOC, unknown"
+Stur_06,"Stur et al. (4) 
+
+GSE189843 
+
+ST data",ER_4,"HGSOC, unknown"
+Stur_07,"Stur et al. (4) 
+
+GSE189843 
+
+ST data",PR_2,"HGSOC, unknown"
+Stur_08,"Stur et al. (4) 
+
+GSE189843 
+
+ST data",PR_3,"HGSOC, unknown"
+Stur_09,"Stur et al. (4) 
+
+GSE189843 
+
+ST data",ER_1,"HGSOC, unknown"
+Stur_10,"Stur et al. (4) 
+
+GSE189843 
+
+ST data",PR_1,"HGSOC, unknown"
+Stur_11,"Stur et al. (4) 
+
+GSE189843 
+
+ST data",ER_2,"HGSOC, unknown"
