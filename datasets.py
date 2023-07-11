@@ -53,15 +53,15 @@ def datasets_page():
      # st.image([img1, img2, img3], width = 350)
 
    elif page == 'Expression':
-      
-      col1, col2, col3 = st.columns(3, gap = "medium")
+      first, middle, last = st.columns([.2, .6, .2])
+      col1, col2 = st.columns(2, gap = "medium")
 
      
 
       file = open('data/textfiles/website_feature_by_gene_violin.txt', 'r')
       list = file.read().splitlines()
 
-      option = col1.selectbox(
+      option = middle.selectbox(
       'Please select what graph you want to see!',
       (list))
 
@@ -71,18 +71,18 @@ def datasets_page():
       # st.image(img, caption = 'Feature Plot', width = 400)
       # st.image(img2, caption = 'Violin Plot', width = 400)
 
-      col1.write(' ')
-      col2.image(img, caption = 'Feature Plot')
-      col3.image(img2, caption = 'Violin Plot')
+      col1.image(img, caption = 'Feature Plot')
+      col2.image(img2, caption = 'Violin Plot')
      
    elif page == 'Feature Plots':
 
-      col1, col2 = st.columns([0.65, 0.35], gap = "large")
+      first, middle, last = st.columns([.2, .6, .2])
+      col1, col2, col3 = st.columns(3)
 
       file = open('data/textfiles/website_spatial_feature.txt', 'r')
       list = file.read().splitlines()
 
-      option = col1.selectbox(
+      option = middle.selectbox(
       'Please select what graph you want to see!',
       (list))
 
