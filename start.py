@@ -8,6 +8,8 @@ from tf import tf_page
 from interaction import interaction_page
 from spatial import spatial_page
 from home import home_page
+from usage import usage_page
+from contact import contact_page
 
 st.set_page_config(
         page_title='Ovarian Cancer',
@@ -16,7 +18,7 @@ st.set_page_config(
 )
 
 
-max_width_str = f"max-width: {85}%;"
+max_width_str = f"max-width: {80}%;"
 st.markdown(f"""
         <style>
         .appview-container .main .block-container{{{max_width_str}}}
@@ -31,24 +33,32 @@ HOME = "Home"
 DATASET = "Datasets"
 TF = "Transcription Factors"
 INTERACTION = "Ligand-receptor Interaction"
-SPATIAL = "On Spatial"
+SPATIAL = "Spatial Autocorrelation"
+USAGE = "Usage"
+CONTACT = "Contact Us"
 
 
 tabs = [
     HOME,
     DATASET,
-    TF,
     INTERACTION,
     SPATIAL,
+    USAGE,
+    CONTACT,
+    TF,
 ]
 
 
 option_data = [
    {'icon': "🏠", 'label':HOME},
-   {'label':DATASET},
-   {'label':TF},
-   {'label':INTERACTION},
-   {'label':SPATIAL},  
+   {'icon': "📊", 'label':DATASET},
+   {'icon': "🛰️", 'label':INTERACTION},
+   {'icon': "↔️", 'label':SPATIAL}, 
+   {'icon': "📈", 'label':USAGE}, 
+   {'icon': "☎️", 'label':CONTACT}, 
+   {'icon': "🧬", 'label':TF},
+
+    
    # to do logo have {'icon': "(emoji)" 'label':____}, 
 ]
 
@@ -70,3 +80,9 @@ elif chosen_tab == INTERACTION:
 
 elif chosen_tab == SPATIAL:
     spatial_page()
+
+elif chosen_tab == USAGE:
+    usage_page()
+
+elif chosen_tab == CONTACT:
+    contact_page()
