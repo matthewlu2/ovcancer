@@ -4,7 +4,7 @@ import hydralit_components as hc
 option_data = [
    {'icon': "", 'label':i} for i in ['Activity', 'Correlation', 'Literature References', 'PPI', 'Download']]
 
-over_theme = {'txc_inactive': 'white','menu_background':'teal','txc_active':'black','option_active':'white'}
+over_theme = {'txc_inactive': 'black','menu_background':'white','txc_active':'white','option_active':'teal'}
 font_fmt = {'font-class':'h3','font-size':'50%'}
 
 

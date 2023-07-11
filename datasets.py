@@ -5,9 +5,9 @@ from PIL import Image
 
 
 option_data = [
-   {'icon': "", 'label':i} for i in ['Metadata', 'Visualization', 'Expression', 'Feature Plots']]
+   {'icon': "", 'label':i} for i in ['Metadata', 'Visualization', 'Feature Plots']]
 
-over_theme = {'txc_inactive': 'white','menu_background':'teal','txc_active':'black','option_active':'white'}
+over_theme = {'txc_inactive': 'black','menu_background':'white','txc_active':'white','option_active':'teal'}
 font_fmt = {'font-class':'h2','font-size':'50%'}
 
 BACKGROUND_COLOR = 'white'
@@ -16,6 +16,7 @@ COLOR = 'black'
 
 def datasets_page():
 
+   st.info("Information Here...")
    page = hc.option_bar(
         option_definition=option_data,
         title='',
@@ -37,6 +38,12 @@ def datasets_page():
 
 
    elif page == 'Visualization':
+      file = open('data/textfiles/website_feature_by_gene_violin.txt', 'r')
+      list = file.read().splitlines()
+
+      option = st.selectbox(
+      'Please select what graph you want to see!',
+      (list))
 
       a, b, c = st.columns(3)
 
@@ -48,43 +55,37 @@ def datasets_page():
       b.image(img2)
       c.image(img3)
 
+
+   
+
+      col1, col2 = st.columns(2, gap = "large")
+
+      img4 = f'{IMG_REPO}/{option}.png'
+      img5 = f'{IMG_REPO2}/{option}.png'
+
+      col1.image(img4, caption = 'Feature Plot')
+      for i in range(12):
+         col2.write("")
+      col2.image(img5, caption = 'Violin Plot')
+    
+
   
 
      # st.image([img1, img2, img3], width = 350)
-
-   elif page == 'Expression':
-      first, middle, last = st.columns([.2, .6, .2])
-      col1, col2 = st.columns(2, gap = "medium")
-
-     
-
-      file = open('data/textfiles/website_feature_by_gene_violin.txt', 'r')
-      list = file.read().splitlines()
-
-      option = middle.selectbox(
-      'Please select what graph you want to see!',
-      (list))
-
-      img = f'{IMG_REPO}/{option}.png'
-      img2 = f'{IMG_REPO2}/{option}.png'
-
-      # st.image(img, caption = 'Feature Plot', width = 400)
-      # st.image(img2, caption = 'Violin Plot', width = 400)
-
-      col1.image(img, caption = 'Feature Plot')
-      col2.image(img2, caption = 'Violin Plot')
      
    elif page == 'Feature Plots':
 
-      first, middle, last = st.columns([.2, .6, .2])
-      col1, col2, col3 = st.columns(3)
+      #first, middle, last = st.columns([.2, .6, .2])
+    
 
       file = open('data/textfiles/website_spatial_feature.txt', 'r')
       list = file.read().splitlines()
 
-      option = middle.selectbox(
+      option = st.selectbox(
       'Please select what graph you want to see!',
       (list))
+
+      col1, col2, col3 = st.columns([.1, .8, .1])
 
       img = f'{IMG_REPO3}/{option}.png'
       col2.image(img)
