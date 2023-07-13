@@ -7,7 +7,7 @@ from PIL import Image
 
 
 option_data = [
-   {'icon': "", 'label':i} for i in ['Metadata', 'Visualization', 'Feature Plots']]
+   {'icon': "", 'label':i} for i in ['Metadata', 'Visualization', 'Spatial Feature Plots']]
 
 over_theme = {'txc_inactive': 'black','menu_background':'white','txc_active':'white','option_active':'teal'}
 font_fmt = {'font-class':'h2','font-size':'50%'}
@@ -74,7 +74,7 @@ def datasets_page():
 
      # st.image([img1, img2, img3], width = 350)
      
-   elif page == 'Feature Plots':
+   elif page == 'Spatial Feature Plots':
 
       #first, middle, last = st.columns([.2, .6, .2])
     
