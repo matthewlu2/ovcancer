@@ -1,6 +1,8 @@
 import streamlit as st
 import hydralit_components as hc
 import pandas as pd
+import os
+
 from PIL import Image
 
 
@@ -25,8 +27,8 @@ def datasets_page():
         )
    
 
-   IMG_REPO = 'data/website_feature_by_gene'
-   IMG_REPO2 = 'data/website_violin'
+   IMG_REPO = 'https://raw.githubusercontent.com/matthewlu2/ov_data/main/website_feature_by_gene/'
+   IMG_REPO2 = 'https://raw.githubusercontent.com/matthewlu2/ov_data/main/website_violin/'
    IMG_REPO3 = 'data/website_spatial_feature'
 
    if page == 'Metadata':
@@ -38,25 +40,24 @@ def datasets_page():
 
 
    elif page == 'Visualization':
-      file = open('data/textfiles/website_feature_by_gene_violin.txt', 'r')
+
+      file = open('data/textfiles/long_list.txt', 'r')
       list = file.read().splitlines()
+      print(len(list))
 
       option = st.selectbox(
       'Please select what graph you want to see!',
-      (list))
+      (list)) 
 
       a, b, c = st.columns(3)
 
-      img1 = "./website_umap_by_group/author.png"
-      img2 = "./website_umap_by_group/sample_author.png"
-      img3 = "./website_umap_by_group/celltype3.png"
+      img1 = "./data/website_umap_by_group/author.png"
+      img2 = "./data/website_umap_by_group/sample_author.png"
+      img3 = "./data/website_umap_by_group/celltype3.png"
 
       a.image(img1)
       b.image(img2)
       c.image(img3)
-
-
-   
 
       col1, col2 = st.columns(2, gap = "large")
 
