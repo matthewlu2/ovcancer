@@ -41,14 +41,7 @@ def datasets_page():
 
    elif page == 'Visualization':
 
-      file = open('data/textfiles/long_list.txt', 'r')
-      list = file.read().splitlines()
-      print(len(list))
-
-      option = st.selectbox(
-      'Please select what graph you want to see!',
-      (list)) 
-
+      
       a, b, c = st.columns(3)
 
       img1 = "./data/website_umap_by_group/author.png"
@@ -58,6 +51,16 @@ def datasets_page():
       a.image(img1)
       b.image(img2)
       c.image(img3)
+
+
+
+      file = open('data/textfiles/long_list.txt', 'r')
+      list = file.read().splitlines()
+      print(len(list))
+
+      option = st.selectbox(
+      'Gene of Interest',
+      (list)) 
 
       col1, col2 = st.columns(2, gap = "large")
 
@@ -83,7 +86,7 @@ def datasets_page():
       list = file.read().splitlines()
 
       option = st.selectbox(
-      'Please select what graph you want to see!',
+      'Gene of Interest',
       (list))
 
       col1, col2, col3 = st.columns([.1, .8, .1])

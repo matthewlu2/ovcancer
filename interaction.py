@@ -14,7 +14,7 @@ def interaction_page():
    list = file.read().splitlines()
 
    option = st.selectbox(
-   'Please select what dotplot you want to see!',
+   'Gene of Interest',
    (list))
 
    col1, col2 = st.columns(2, gap = "medium")
