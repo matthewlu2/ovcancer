@@ -18,7 +18,7 @@ COLOR = 'black'
 
 def datasets_page():
 
-   st.info("Information Here...")
+   st.info('In this study, we combined inhouse data with 3 deposited single-cell RNA sequencing (scRNA-seq) dataset. The integrated scRNA-seq dataset consists of high-grade serous ovarian carcinoma (HGSOC) samples from 20 treatment-naïve patients. We also analyzed a spatial transcriptomics (ST) dataset which consists of HGSOC samples from 11 treatment-naïve patients, and the TCGA-OV dataset (n=248).')
    page = hc.option_bar(
         option_definition=option_data,
         title='',
@@ -33,7 +33,6 @@ def datasets_page():
 
    if page == 'Metadata':
 
-      st.info('In this study, we combined inhouse data with 3 deposited single-cell RNA sequencing (scRNA-seq) dataset. The integrated scRNA-seq dataset consists of high-grade serous ovarian carcinoma (HGSOC) samples from 20 treatment-naïve patients. We also analyzed a spatial transcriptomics (ST) dataset which consists of HGSOC samples from 11 treatment-naïve patients, and the TCGA-OV dataset (n=248).')
       table = pd.read_csv("./data/tables1.csv")
       st.write(table)
       st.caption("Expand columns if needed")   

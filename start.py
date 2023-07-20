@@ -34,7 +34,7 @@ DATASET = "Datasets"
 TF = "Transcription Factors"
 INTERACTION = "Ligand-receptor Interaction"
 SPATIAL = "Spatial Autocorrelation"
-USAGE = "Usage"
+#USAGE = "Usage"
 CONTACT = "Contact Us"
 
 
@@ -43,7 +43,7 @@ tabs = [
     DATASET,
     INTERACTION,
     SPATIAL,
-    USAGE,
+    #USAGE,
     CONTACT,
     TF,
 ]
@@ -54,7 +54,7 @@ option_data = [
    {'icon': "📊", 'label':DATASET},
    {'icon': "🛰️", 'label':INTERACTION},
    {'icon': "↔️", 'label':SPATIAL}, 
-   {'icon': "📈", 'label':USAGE}, 
+   #{'icon': "📈", 'label':USAGE}, 
    {'icon': "☎️", 'label':CONTACT}, 
    {'icon': "🧬", 'label':TF},
 
@@ -81,8 +81,8 @@ elif chosen_tab == INTERACTION:
 elif chosen_tab == SPATIAL:
     spatial_page()
 
-elif chosen_tab == USAGE:
-    usage_page()
+# elif chosen_tab == USAGE:
+#     usage_page()
 
 elif chosen_tab == CONTACT:
     contact_page()
